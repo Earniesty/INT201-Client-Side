@@ -1,4 +1,4 @@
-# INT201-Client-Side
+# INT201-Client-Side Mid-Term Part1
 JavaScript เป็นภาษาแบบ Dynamic typing (ตัวแปรหนึ่งตัวสามารถเก็บข้อมูลได้หลายประเภทในขณะที่โปรแกรมทำงาน)
 ### Declare Variables
 - **var**
