@@ -20,7 +20,7 @@ JavaScript เป็นภาษาแบบ Dynamic typing (ตัวแปร�
 ### Object and Array
 - **Object** use { } curly braces
 - **Array** use [ ] square bruckets or bruckets
-- not collect value but collect addres on memory
+- not collect value but collect addres on memory [Example](./mid-term1/array/checkArray.js)
 
 ### **Type Conversions**
     
@@ -44,10 +44,17 @@ JavaScript เป็นภาษาแบบ Dynamic typing (ตัวแปร�
     
 - `===` first check datatype and then, check value. If datatype not match `return false`
 
-### String 
+### String [Example Code String](./mid-term1/array/string.js)
 - **toLowerCase():** ทำให้ตัวอักษรภาษาอังกฤษใน String เป็นตัวพิมพ์เล็ก
 - **toUpperCase():** ทำให้ตัวอักษรภาษาอังกฤษใน String เป็นตัวพิมพ์ใหญ่
 - **Equality():** จะตรวจสอบผ่าน ASCII Code ของแต่ละตัวอักษรใน String 
 - **charCodeAt(0):** แปลงตัวอักษรเป็น UniCode
 - **fromCharCode():** แปลงตัวเลข(UniCode) เป็นตัวอักษร
-[Example Code String](./mid-term1/array/string.js)
+
+
+### Concept Synchronous (Sync) and Asynchronous (Async) 
+##### **Synchronous (Sync)**([Example Code](./mid-term1/syncAndAsync/sync.js))
+- การทำงานแบบตามลำดับขั้นตอน, รอส่วนอื่นทำงานเสร็จก่อนจึงค่อยทำงานต่อ
+
+##### **Asynchronous (Async)**([Example Code](./mid-term1/syncAndAsync/async.js))
+- การทำงานที่สามารถทำงานส่วนอื่น ๆ ได้โดยที่ไม่ต้องรอให้ส่วนนั้น ๆ ทำเสร็จก่อน
