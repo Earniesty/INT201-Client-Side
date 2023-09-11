@@ -31,3 +31,8 @@ for (let i = 0; i < str1.length; i++) {
 for (let i = 0; i < uniCodes.length; i++) {
     console.log(uniCodes[i] + ' => ' + String.fromCharCode(uniCodes[i]))
 }
+
+console.log(str1.slice(2)) // ple
+console.log(str1.slice(-2)) // le
+console.log(str1.slice(1, 3)) // pp
+console.log(str1.slice(-4, 5)) // pple

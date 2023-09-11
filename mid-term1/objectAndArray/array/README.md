@@ -8,7 +8,7 @@
 - **pop():** ลบค่าตำแหน่งสุดท้ายใน Array
 - **shift():** ลบค่าตำแหน่งแรกใน Array
 - **unshift():** เพิ่ม/แทรกค่าใน Array ตำแหน่งแรกสุด
-- **includes():** จะต้องมีค่านั้นๆ ที่ระบุมา ถ้ามีจะ `return true` สามารถใช้กับการหา word ใน String ได้
+- **includes():** จะต้องมีค่านั้นๆ ที่ระบุมา ถ้ามีจะ `return true` สามารถใช้กับการหา keyword ใน String ได้
 
 ### Spread operator
 เป็น Operator ที่ช่วยในการ merge Array/Object ได้
