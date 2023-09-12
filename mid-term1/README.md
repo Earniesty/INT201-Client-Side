@@ -62,3 +62,38 @@ JavaScript เป็นภาษาแบบ Dynamic typing (ตัวแปร�
 
 ##### **Asynchronous (Async)**([Example Code](./mid-term1/syncAndAsync/async.js))
 - การทำงานที่สามารถทำงานส่วนอื่น ๆ ได้โดยที่ไม่ต้องรอให้ส่วนนั้น ๆ ทำเสร็จก่อน
+
+### GIT Basic
+- git credential-cache exit
+- git config --global --unset
+- git config
+    
+    ```jsx
+    git config --global user.name "Your Name"
+    git config --global user.email "your@example.com"
+    ```
+    
+- git clone <repo url>
+- git init → for new project
+- **add**
+    
+    ```jsx
+    git add <file_name>
+    git add . (all file)
+    ```
+    
+- git commit -m "Commit message”
+- **Connect to a Remote Repository**
+    
+    If you want to collaborate with others or back up your work, you can connect your local repository to a remote repository service like GitHub, GitLab, or Bitbucket. You'll need to create a repository on the remote platform and then use the provided URL to add a remote to your local repository:
+    
+    ```jsx
+    git remote add origin <remote_repository_url>
+    ```
+    
+- **Push and Pull Changes**
+    
+    ```jsx
+    git push origin <branch_name>
+    git pull origin <branch_name>
+    ```
