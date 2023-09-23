@@ -14,7 +14,7 @@ let pi = Math.PI
 let floatingTwoPoint = pi.toFixed(2) // 3.14 but still string
 ```
     
-### How to random number:
+### **How to random number:**
     
 ```jsx
 let rand = Math.floor(Math.random() * (max - min + 1)) + min
