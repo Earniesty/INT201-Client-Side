@@ -2,6 +2,7 @@
 
 # [All Basic from First Mid-Term](/mid-term1/function/README.md)
 ### Arrow function
+[Click here](/code/wk7/function.js)
 
 ### Closures [Example Code](/code/wk9/closures.js) or [This](/code/wk9/main.js)
 - เป็นรูปการเขียน Function รูปแบบหนึ่ง
