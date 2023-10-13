@@ -27,4 +27,3 @@ x(100)
 // z() //cannot access
 const yfn = x(100)
 yfn(888) //a: 555, m: 100, b:2, n:888, c:3
-

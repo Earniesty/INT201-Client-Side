@@ -8,7 +8,7 @@ let getScoringPass = function (scores) {
 let fn_cuttinpoint1 = getScoringPass([50, 15, 32, 80, 100])
 console.log(fn_cuttinpoint1)
 console.log(typeof fn_cuttinpoint1)
-// console.log(fn_cuttinpoint1(50))
+console.log(fn_cuttinpoint1(50))
 
 function counter() {
     let count = 0

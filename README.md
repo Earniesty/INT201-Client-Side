@@ -1,6 +1,6 @@
 # Module
-- **[All Basic in Module 1 (First Mid-term)](./mid-term1/README.md)**
-- **[Module 2 (Second Mid-Term)](./mid-term2/README.md)**
+- **[All Basic in Module 1 Part 1 (First Mid-term)](./mid-term1/README.md)**
+- **[Module 1 Part 2 (Second Mid-Term)](./mid-term2/README.md)**
 
 #### First Mid-term
 - Declare Variables
@@ -12,12 +12,12 @@
 - String
     - Function for String
 - Math and Function for Number
-- Condition
+- [Condition](./mid-term1/condition/README.md)
     - if, else if, else
     - Ternary operator `?:`
     - Optional chaining `?.`
     - Nullish coalescing operator `??`
-- Loop
+- [Loop](./mid-term1/loop/README.md)
     - while
     - do while
     - for
@@ -26,7 +26,35 @@
         - for...of
         - for...in
 - Function 
+    - callback Function
+    - inline Function
 - Concept Synchronous and Asynchronous
 #### Second Mid-term
-
+- ************Object************
+- **********Scope**********
+- **[Function](./mid-term2/function-part2/README.md)**
+    - Arrow Function
+    - Nested Function
+        - Closures
+- **Array (Array Method)**
+    - `forEach()`
+    - `fliter()`
+    - `map()`
+    - `find()`
+    - `findIndex()`
+    - `every()` & `some()`
+    - Stack and Queue Methods
+        - `push()`
+        - `pop()`
+        - `shift()`
+        - `unshift()`
+    - Subarray Methods
+        - `includes()`
+        - `reverse()`
+        - `sort()`
+        - `indexOf()`
+        - `concat()`
+    - Array to String
+        - `join()`
+- **[JSON](/code/wk6/inJSON.js)**
 #### Final
