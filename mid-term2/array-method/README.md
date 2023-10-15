@@ -72,7 +72,7 @@ const keywords = ['destructuring', 'spread', '3BB', "True Corp", "AIS", "DTAC"]
 
     ```jsx
     const array6 = [5, 12, 8, 130, 44]
-    const found = array6.find(element => element > 13)
+    const found = array6.findIndex(element => element > 13)
     console.log(found) // 3
     ```
         
