@@ -21,6 +21,7 @@ function todoManagemnet() {
     function addTodo(desc) {
         const id = todos.length + 1
         const todo = new Todo(id, desc)
+        // if use static on class Todo
         return todos.push(todo)
         // return todos.push(todo.getTodo())
     }
@@ -77,7 +78,7 @@ todoOne.setDescription('Hello, Guy')
 console.log(todoOne.getTodo())
 
 // Todo in management
-let manageTodo = todoManagemnet()
+const manageTodo = todoManagemnet()
 console.log(manageTodo.addTodo('Hello world'))
 console.log(manageTodo.addTodo('Play Game'))
 console.log(manageTodo.getTodos())
