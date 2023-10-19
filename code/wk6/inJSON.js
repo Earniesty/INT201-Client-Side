@@ -11,8 +11,8 @@ function isEmpty(obj) {
     return JSON.stringify(obj) === '{}'
 }
 
-console.log(isEmpty(obj1))
-console.log(isEmpty(obj2))
+console.log(isEmpty(obj1)) // true
+console.log(isEmpty(obj2)) // false
 
 const obj3 = obj2
 const obj4 = { ...obj2 } // copy content from obj2 to obj4, not reference

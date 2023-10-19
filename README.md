@@ -31,7 +31,7 @@
 - Concept Synchronous and Asynchronous
 #### Second Mid-term
 - ************Object************
-- **********Scope**********
+- **********[Scope](/mid-term1/scope/README.md)**********
 - **[Function](./mid-term2/function-part2/README.md)**
     - Arrow Function
     - Nested Function
