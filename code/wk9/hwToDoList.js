@@ -2,7 +2,7 @@ class Todo {
     // static nextId = 0
     // constructor(description) {
     constructor(id, description) {
-        this.id = id // ++nextId
+        this.id = id // ++Todo.nextId
         this.description = description
     }
 
