@@ -101,8 +101,12 @@ JavaScript เป็นภาษาแบบ Dynamic typing (ตัวแปร�
     git pull origin <branch_name>
     ```
 
-- **Delete Branch**
+- **Branch**
     ```jsx
+    git branch // check branch
+    git branch -all // check all branch
+    git branch <new-branch-name> // create new branch
+    git checkout <new-branch-name> // เข้า branch ใหม่
     git branch -d <branch-name> // delete
     git branch -D <branch-name> // force delete
     ```

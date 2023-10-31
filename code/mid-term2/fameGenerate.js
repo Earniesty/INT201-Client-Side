@@ -69,3 +69,14 @@ console.log('sort by date')
 console.log(management.listTaskByDate())
 console.log('Check false')
 console.log(management.listComplete(false))
+
+const sortTasks = management.listTaskByDate()
+const thisTasks = management.listTasks()
+console.log(sortTasks === thisTasks) // true
+
+const arr = [4, 5, 67, 12, 43, 55, 12]
+console.log(arr.splice(1, 2) === arr) // false 
+console.log(arr.slice(1, 4) === arr) // false
+console.log(arr)
+console.log(arr.slice(1, 4))
+console.log(arr.fill(4) === arr) // true

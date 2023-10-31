@@ -139,6 +139,7 @@ const keywords = ['destructuring', 'spread', '3BB', "True Corp", "AIS", "DTAC"]
         
 - Subarray Methods
     - `splice()` → splice(`start`, `deleteCount`, `<value> or <element>`)
+        - return new array
         - change content of an array by `remove` or `replace` and/or `add new elements` in place
         - `start`: index at which to start changing array
         - `deleteCount`: if value is `0` or `negative`, no elements are removed
@@ -163,6 +164,7 @@ const keywords = ['destructuring', 'spread', '3BB', "True Corp", "AIS", "DTAC"]
         ```
 
     - `slice():` → slice(`begin`, `end`)
+        - return new array
         - `begin` use index of an array
         - `end` : index before
         - if `begin and end` is negative will start from lastest of an array
@@ -226,7 +228,7 @@ const keywords = ['destructuring', 'spread', '3BB', "True Corp", "AIS", "DTAC"]
         ```
             
     - `reverse()`
-        - ไม่จำเป็นต้องหาตัวแปรมาเก็บ เพราะ reverse จะเข้าไป edit original array เลย
+        - ไม่จำเป็นต้องหาตัวแปรมาเก็บ เพราะ reverse จะเข้าไป edit original array
 
         ```jsx
         console.log(fruits.reverse()) // [ 'grape', 'banana', 'pineapple', 'orange', 'mango', 'apple' ]
