@@ -3,12 +3,13 @@
 
 // ES Module
 // import {echo, maxValue, sum} from './libs/uitls.js'
-// import sum, {echo, maxValue} from './libs/uitls.js'
+import summary, {echo, maxValue} from './libs/uitls.js'
 
-// console.log(echo('Fame'))
-// console.log(sum(1,2,3,4,2,1,4,1,4,2,8))
-// console.log(maxValue)
-// console.log(typeof maxValue)
+console.log(echo('Fame'))
+// console.log(sum(1,2,3,4,2,1,5,1,4,2,8))
+console.log(summary(1,2,3,4,2,1,5,1,4,2,8))
+console.log(maxValue)
+console.log(typeof maxValue)
 
 // DOM
 const rootNode = window.document
