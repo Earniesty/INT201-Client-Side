@@ -11,8 +11,8 @@ class Library {
         if (!title || !author || !year || !genre) return undefined
         if (this.books.length > 0) {
             for (const book of this.books) {
-                if (book.title.toLowerCase() === title.toLowerCase() &&
-                this.author.toLowerCase() === author.toLowerCase()) return undefined
+                if (book.title?.toLowerCase() === title?.toLowerCase() &&
+                this.author?.toLowerCase() === author?.toLowerCase()) return undefined
             }
         }
         const newBook = {

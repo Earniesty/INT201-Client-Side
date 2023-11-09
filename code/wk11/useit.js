@@ -1,4 +1,5 @@
 const {Library} = require('./libary.js')
+const {City} = require('./city.js')
 
 const library = new Library()
 
@@ -23,3 +24,10 @@ console.log(library.updateBook('The Catcher in the Rye', { year: 1951 }))
 // Should return undefined since 'The Catcher in the Rye' is not in the library.
 
 console.log(library.deleteBookByTitle('The great gatsby'))
+
+const city = new City()
+
+console.log(city.listAllBuildingCity())
+console.log(city.addBuilding(library))
+console.log(city.addBuilding(library))
+console.log(city.listAllBuildingCity())
