@@ -4,9 +4,8 @@
 import { loadHandler, beforeUnloadHandler } from "./eventHandler/eventController.js"
 
 window.addEventListener('load', loadHandler)
-window.addEventListener('beforeunload', (event) => {
-    beforeUnloadHandler(event)
-})
+window.addEventListener('beforeunload', beforeUnloadHandler)
+// window.addEventListener('beforeunload', (event) => beforeUnloadHandler(event))
 
 // addTodoHandler()
 // notDoneButtonHandler()

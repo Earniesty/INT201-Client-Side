@@ -1,17 +1,15 @@
 import { todoListManagement } from "../lib/todoManagement.js"
 import { showTodoItem, showNumberOfDone, showNumberOfNotDone, removeTodoItem } from "../UI/todoListUI.js"
 
-let management = null
+const management = todoListManagement()
 
 function loadHandler() {
-    if (!management) {
-        management = todoListManagement()
-
-        const storedTodos = localStorage.getItem('todos')
-        if (storedTodos) {
-            const todos = JSON.parse(storedTodos)
-            management.loadTodos(todos)
-        }
+    const storedTodos = localStorage.getItem('todos')
+    console.log(typeof storedTodos)
+    if (storedTodos) {
+        const todos = JSON.parse(storedTodos)
+        console.log(todos)
+        management.loadTodos(todos)
     }
 
     const todos = management.getTodos()
@@ -26,10 +24,10 @@ function loadHandler() {
         }
     })
 
-    updatePage()
     addTodoHandler()
     notDoneButtonHandler()
     removeButtonHandler()
+    updatePage()
 }
 
 function beforeUnloadHandler(event) {
@@ -48,8 +46,9 @@ function addTodoHandler() {
 
         if (description) {
             const lastedId = management.addTodo(description)
-            updatePage()
+            console.log(management.getTodos())
             showTodoItem(lastedId, description)
+            updatePage()
             inputBox.value = ''
 
             // const getAllTodoItemUI = document.querySelectorAll('#listTodo>.todoItem')
@@ -71,6 +70,7 @@ function notDoneButtonHandler() {
             thisButton.style.backgroundColor = 'green'
             thisButton.style.color = 'white'
             thisButton.textContent = 'Done'
+            console.log(textInElement)
 
             updatePage()
         }
@@ -96,4 +96,4 @@ function updatePage() {
 }
 
 // export {addTodoHandler, notDoneButtonHandler, removeButtonHandler}
-export {loadHandler, beforeUnloadHandler}
+export { loadHandler, beforeUnloadHandler }

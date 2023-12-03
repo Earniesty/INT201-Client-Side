@@ -1,5 +1,4 @@
 import { Todo } from "./todo.js"
-// const {Todo} = require('./todo.js')
 
 function todoListManagement() {
     let todos = []
@@ -19,7 +18,7 @@ function todoListManagement() {
     }
 
     function removeTodo(removeId) {
-        todos = todos.filter((todo) => todo.id != removeId)
+        todos = todos.filter(({id}) => id != removeId)
     }
 
     function getTodos() {
@@ -27,30 +26,30 @@ function todoListManagement() {
     }
 
     function getNumberOfDone() {
-        return (todos.filter(({done}) => done)).length
+        return todos.filter(({done}) => done).length
     }
 
     function getNumberOfNotDone() {
-        return (todos.filter(({done}) => !done)).length
-    }
-
-    function clearTodo() {
-        todos.splice(0, todos.length)
+        return todos.filter(({done}) => !done).length
     }
 
     function setItemToDone(doneId) {
-        const index = todos.findIndex(({id}) => id == doneId)
-        const todo = todos[index]
-
+        const todo = findTodo(doneId)
         todo.setDone(true)
     }
 
+    function clearTodo() {
+        todos = []
+        // todos = todos.splice(0, todos.length)
+    }
+
     function loadTodos(userTodos) {
-        todos = [...(userTodos.map((todo) => new Todo(Number(todo.id), todo.description, !!todo.done)))]
-        let lastId
-        todos.forEach((todo) => {
-            lastId = todo.id
+        let lastId = 0
+        userTodos.forEach((todo) => {
+            todos.push(new Todo(Number(todo.id), todo.description, !!todo.done))
+            lastId = todos[todos.length-1].id
         })
+
         Todo.runningId = lastId + 1
     }
 
@@ -62,18 +61,10 @@ function todoListManagement() {
         getTodos,
         getNumberOfDone,
         getNumberOfNotDone,
-        clearTodo,
         setItemToDone,
-        loadTodos
+        loadTodos,
+        clearTodo
     }
 }
-
-// const management = todoListManagement()
-// console.log(management.addTodo('Play Piano'))
-// console.log(management.addTodo('Play Guitar'))
-// console.log(management.addTodo('Play Tennis'))
-// console.log(management.getTodos())
-// console.log(management.getNumberOfDone())
-// console.log(management.getNumberOfNotDone())
 
 export {todoListManagement}
