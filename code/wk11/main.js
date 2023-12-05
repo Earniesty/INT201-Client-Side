@@ -18,25 +18,25 @@ console.log(rootNode.nodeName) // #document
 console.log(rootNode.nodeType) // 9 -> nodeType return int number of that type value
 console.log(rootNode.nodeValue) // null
 
-console.log(rootNode.documentElement)
-console.log(rootNode.documentElement.nodeName)
-console.log(rootNode.documentElement.nodeType)
-console.log(rootNode.documentElement.nodeValue)
+console.log(rootNode.documentElement) // <html>...</html>
+console.log(rootNode.documentElement.nodeName) // html
+console.log(rootNode.documentElement.nodeType) // 1
+console.log(rootNode.documentElement.nodeValue) // null
 
-console.log(rootNode.body)
-console.log(rootNode.body.nodeName)
-console.log(rootNode.body.nodeType)
-console.log(rootNode.body.nodeValue)
+console.log(rootNode.body) // <body>...</body>
+console.log(rootNode.body.nodeName) // body
+console.log(rootNode.body.nodeType) // 1
+console.log(rootNode.body.nodeValue) // null
 
-console.log(rootNode.head)
-console.log(rootNode.head.nodeName)
-console.log(rootNode.head.nodeType)
-console.log(rootNode.head.nodeValue)
+console.log(rootNode.head) // <head>...</head>
+console.log(rootNode.head.nodeName) // head
+console.log(rootNode.head.nodeType) // 1
+console.log(rootNode.head.nodeValue) // null
 
-console.log(rootNode.title)
-console.log(rootNode.title.nodeName)
-console.log(rootNode.title.nodeType)
-console.log(rootNode.title.nodeValue)
+console.log(rootNode.title) // <title>...</title>
+console.log(rootNode.title.nodeName) // title
+console.log(rootNode.title.nodeType) // 1
+console.log(rootNode.title.nodeValue) // null
 
 const headElement = document.head
 console.log(headElement)

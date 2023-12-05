@@ -16,7 +16,7 @@ class Todo {
     }
 
     setDescription(newDescription) {
-        this.description = this.description
+        this.description = newDescription
     }
 
     setDone(done) {

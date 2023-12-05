@@ -58,3 +58,14 @@
         - `join()`
 - **[JSON](/code/wk6/inJSON.js)**
 #### Final
+- ************[JS Module](/final/jsModule/README.md)************
+- ******[DOM](/final/DOM/README.md)******
+- **********[Event](/final/event/README.md)**********
+    - Event flow concept
+    - Three phase event flow
+    - Event Object
+    - Event types
+- **************************[Storage](/final/storage/README.md)**************************
+    - cookie
+    - sessionStorage
+    - localStorage
