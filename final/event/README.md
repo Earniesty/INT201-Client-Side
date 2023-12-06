@@ -12,10 +12,10 @@
 ```html
 <html>
 <head>
-		<title>Event Bubbling Example</title>
+	<title>Event Bubbling Example</title>
 </head>
 <body>
-		<div id="myDiv">Click Me</div>
+	<div id="myDiv">Click Me</div>
 </body>
 </html>
 ```
