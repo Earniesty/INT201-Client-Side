@@ -1,5 +1,6 @@
 import { manageUser } from "./manage/manageuser.js"
 import { changeBGColor, changeFontColor, allToDefault, showSetting, hideSetting } from "./event/controller.js"
+import { validate } from "./manage/validate.js"
 const manageUserBox = manageUser()
 let dataUsers = manageUserBox.getDataUsers()
 
@@ -15,6 +16,12 @@ formLoginBox.addEventListener('submit', (event) => {
 
     const username = usernameBox.value
     const password = passwordBox.value
+
+    const { validateUsername, validatePassword } = validate()
+    if (!validateUsername(username) || !validatePassword(password)) {
+        alert('Invalid Username or Password format!')
+        return
+    }
 
     dataUsers = manageUserBox.findUser(username)
     if (dataUsers) {
