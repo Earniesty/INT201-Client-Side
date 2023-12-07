@@ -24,9 +24,9 @@
 | DOCUMENT_TYPE_NODE | 10 |
 | DOCUMENT_FRAGMENT_NODE | 11 |
 ### console
-- nodeType: return int value of that type element
-- nodeName: ถ้าเป็น Tag Element, จะ return tag name ของ element นั้นด้วย format `Uppercase`
-- nodeValue:
+- `nodeType`: return int value of that type element
+- `nodeName`: ถ้าเป็น Tag Element, จะ return tag name ของ element นั้นด้วย format `Uppercase`
+- `nodeValue`:
     | Node | Value of nodeValue |
     | --- | --- |
     | CDATASection | Content of the CDATA section |
@@ -38,7 +38,7 @@
     | NamedNodeMap | null |
     | ProcessingInstruction | Entire content excluding the target |
     | Text | Content of the text node |
-- Code01
+- **Code01**
     
     ```html
     <html lang="en">
@@ -177,7 +177,7 @@ console.log(divStyleAttr) //font-size: 10pt
 
 ---
 
-### Node Relationships
+### Node Relationships (code01)
 
 - `someNode.firstChild` = `someNode.childNodes[0]`
 - `someNode.lastChild` = `someNode.childNodes[someNode.childNodes[length-1]]`
